@@ -52,7 +52,7 @@ export function ajouterEnTete(req: Requete, cle: string, valeur: string): Requet
 declare const MarqueUrl: unique symbol;
 export type UrlHttp = { readonly [MarqueUrl]: true };
 
-export interface InternalUrlHttp {
+interface InternalUrlHttp {
   readonly protocole: string;
   readonly domaine: string;
   readonly port: Option<string>;
